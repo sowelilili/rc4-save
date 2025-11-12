@@ -11,8 +11,10 @@
     #define savedata_buf (*(void**)((int)savedata_info + 4))
     // #define savedata_buf (*((void**)0xa28e6c))
     // #define savedata_buf (*(void**)((int)savedata_info + 4))
-
-    #define magic_addr (*(int*)0x119f8dc)
+    #define level_id           (*(int*)0x09c3240)
+    #define destination_planet (*(int*)0xb36dd0)
+    #define should_load        (*(int*)0xb36dcc)
+    #define magic_addr         (*(int*)0x119f8dc)
 
     // I/O addresses
     #define api_mod      (*(char*)0x15CD71D)

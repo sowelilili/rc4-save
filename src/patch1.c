@@ -34,7 +34,9 @@ void _start(void)
         // do load
         if (magic_addr == 24) {
             api_load = 0;
-            magic_load();
+            // magic_load(); // doesn't work sometimes?
+            destination_planet = level_id;
+            should_load = 1;
         // cancel load
         } else if (magic_addr == 28) {
             api_load = 0;
