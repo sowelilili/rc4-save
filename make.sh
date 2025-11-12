@@ -25,8 +25,11 @@ echo "#- name: $friendly_name" >> out/patch.txt
 echo "#- author: $author" >> out/patch.txt
 echo "#- version: $version" >> out/patch.txt
 
-c patch1 70e7d4
-p 70719c 48007639
+c patch1 661f9c
+p 70719c 4bf5ae01
+
+# c patch1 70e7d4
+# p 70719c 48007639
 
 mv out $name
 rm $name.zip
