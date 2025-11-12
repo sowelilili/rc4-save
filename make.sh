@@ -15,9 +15,9 @@ p() {
     echo "0x$1: 0x$2" >> out/patch.txt
 }
 
-name="rc2-save"
+name="rc4-save"
 friendly_name="Savefile Helper"
-author="king_dedede"
+author="robo, king_dedede"
 version="1.0"
 
 rm out/patch.txt
@@ -25,9 +25,10 @@ echo "#- name: $friendly_name" >> out/patch.txt
 echo "#- author: $author" >> out/patch.txt
 echo "#- version: $version" >> out/patch.txt
 
-c patch1 10cd11c
-p b086b0 490cd11f
+c patch1 70e7d4
+p 70719c 48007639
 
 mv out $name
+rm $name.zip
 zip $name.zip -r $name
 mv $name out
